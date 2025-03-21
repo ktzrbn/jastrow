@@ -1,0 +1,70 @@
+<!-- views/index.erb -->
+<main>
+  <div class="search-container">
+    <h1>Jastrow's Dictionary</h1>
+    <form action="/search" method="get">
+      <input type="text" name="query" placeholder="Search Jastrow Dictionary..." class="search-bar" id="search-bar">
+      <button type="submit" class="search-button">Search</button>
+    </form>
+    <section class="info-section">
+      <h2>About this Dictionary</h2>
+      <p>This website uses the Sefaria API to provide access to Jastrow's dictionary, a comprehensive Aramaic dictionary of the Targumim, the Bavli and Yerushalmi, and Midrashic literature.</p>
+      <p>Simply search for a term above.</p>
+    </section>
+
+    <div id="hebrew-keyboard" class="keyboard">
+      <div class="keyboard-header" id="keyboard-drag-handle">
+        <span>Hebrew Keyboard</span>
+        <button id="close-keyboard" class="close-button">✕</button>
+      </div>
+      <div class="keyboard-keys">
+        <!-- Row 1 -->
+        <div class="key-row">
+          <button class="key" data-char="ק">ק</button>
+          <button class="key" data-char="ר">ר</button>
+          <button class="key" data-char="א">א</button>
+          <button class="key" data-char="ט">ט</button>
+          <button class="key" data-char="ו">ו</button>
+          <button class="key" data-char="ן">ן</button>
+          <button class="key" data-char="ם">ם</button>
+          <button class="key" data-char="פ">פ</button>
+        </div>
+        <!-- Row 2 -->
+        <div class="key-row">
+          <button class="key" data-char="ש">ש</button>
+          <button class="key" data-char="ד">ד</button>
+          <button class="key" data-char="ג">ג</button>
+          <button class="key" data-char="כ">כ</button>
+          <button class="key" data-char="ע">ע</button>
+          <button class="key" data-char="י">י</button>
+          <button class="key" data-char="ח">ח</button>
+          <button class="key" data-char="ל">ל</button>
+          <button class="key" data-char="ך">ך</button>
+          <button class="key" data-char="ף">ף</button>
+        </div>
+        <!-- Row 3 -->
+        <div class="key-row">
+          <button class="key" data-char=",">,</button>
+          <button class="key" data-char="ז">ז</button>
+          <button class="key" data-char="ס">ס</button>
+          <button class="key" data-char="ב">ב</button>
+          <button class="key" data-char="ה">ה</button>
+          <button class="key" data-char="נ">נ</button>
+          <button class="key" data-char="מ">מ</button>
+          <button class="key" data-char="צ">צ</button>
+          <button class="key" data-char="ת">ת</button>
+          <button class="key" data-char="ץ">ץ</button>
+        </div>
+        <!-- Row 4 -->
+        <div class="key-row">
+          <button class="key space-key" data-char=" ">Space</button>
+          <button class="key backspace-key" data-action="backspace">⌫</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <p>Powered by Katzir Industries :)</p>
+</footer>

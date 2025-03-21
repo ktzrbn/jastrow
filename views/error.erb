@@ -1,0 +1,17 @@
+<h1>Error</h1>
+<p><%= @error %></p>
+
+<% if @request_url %>
+  <p>Request URL: <%= @request_url %></p>
+<% end %>
+
+<% if @response_code %>
+  <p>Response Code: <%= @response_code %></p>
+<% end %>
+
+<% if @raw_response %>
+  <h3>Raw Response:</h3>
+  <pre><%= @raw_response %></pre>
+<% end %>
+
+<p><a href="/">Return to search</a></p>

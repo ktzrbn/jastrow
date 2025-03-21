@@ -1,0 +1,370 @@
+/* public/styles.css */
+
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and Typography */
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: #F5F5F5;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Container for centering content */
+.result {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Headings */
+h1 {
+  font-family: 'Georgia', serif;
+  font-size: 36px;
+  color: #222;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-family: 'Georgia', serif;
+  font-size: 28px;
+  color: #222;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+h3 {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 18px;
+  color: #4A8484;
+  margin-top: 20px;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+/* Paragraphs */
+p {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 12px;
+  line-height: 1.8;
+}
+
+/* Links */
+a {
+  color: #4A8484;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #366666;
+}
+
+/* Debug Section */
+details {
+  margin-top: 30px;
+  font-size: 14px;
+}
+
+summary {
+  cursor: pointer;
+  color: #4A8484;
+  font-weight: 500;
+}
+
+pre {
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 4px;
+  overflow-x: auto;
+}
+
+/* Search Page (Homepage) Styles */
+.search-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Ensure footer is visible on desktop */
+@media (min-width: 769px) {
+  .search-container {
+    min-height: calc(100vh - 100px); /* Adjust for footer height */
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .search-container {
+    min-height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+.search-bar {
+  width: 100%;
+  max-width: 600px;
+  padding: 15px 20px;
+  font-size: 18px;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  color: #333;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  margin-bottom: 20px;
+  outline: none;
+}
+
+.search-bar:focus {
+  border-color: #4A8484;
+  box-shadow: 0 0 5px rgba(74, 132, 132, 0.3);
+}
+
+.search-button {
+  padding: 12px 30px;
+  font-size: 16px;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  color: #fff;
+  background-color: #4A8484;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.search-button:hover {
+  background-color: #366666;
+}
+
+/* Info Section */
+.info-section {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.info-section h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.info-section p {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 14px;
+  color: #666;
+}
+
+/* Hebrew Keyboard Styles */
+.keyboard {
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  width: 450px;
+  z-index: 1000;
+  cursor: move;
+}
+
+.keyboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 5px;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+  user-select: none;
+}
+
+.keyboard-header span {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 16px;
+  color: #333;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  font-size: 18px;
+  color: #4A8484;
+  cursor: pointer;
+  padding: 0 5px;
+}
+
+.close-button:hover {
+  color: #366666;
+}
+
+.keyboard-keys {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.key-row {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.key {
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 18px;
+  color: #333;
+  cursor: pointer;
+  min-width: 40px;
+  text-align: center;
+  transition: background-color 0.2s;
+}
+
+.key:hover {
+  background-color: #e0e0e0;
+}
+
+.space-key {
+  flex-grow: 1;
+  padding: 10px 20px;
+  font-size: 14px;
+}
+
+.backspace-key {
+  padding: 10px 20px;
+  font-size: 18px;
+  min-width: 60px;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    font-size: 24px;
+    margin-bottom: 12px;
+  }
+
+  h3 {
+    font-size: 16px;
+    margin-top: 15px;
+    margin-bottom: 6px;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .result {
+    max-width: 100%;
+    margin: 10px auto;
+    padding: 15px;
+  }
+
+  .search-bar {
+    max-width: 100%;
+    padding: 12px 15px;
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+
+  .search-button {
+    padding: 10px 25px;
+    font-size: 14px;
+  }
+
+  .info-section {
+    margin-top: 30px;
+  }
+
+  .info-section h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .info-section p {
+    max-width: 100%;
+    font-size: 14px;
+  }
+
+  footer {
+    margin-top: 30px;
+    font-size: 12px;
+  }
+
+  .keyboard {
+    display: none; /* Already hidden via JS, but reinforce */
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 14px;
+  }
+
+  p {
+    font-size: 13px;
+  }
+
+  .result {
+    padding: 10px;
+  }
+
+  .search-bar {
+    padding: 10px 12px;
+    font-size: 14px;
+  }
+
+  .search-button {
+    padding: 8px 20px;
+    font-size: 13px;
+  }
+
+  .info-section h2 {
+    font-size: 18px;
+  }
+}
