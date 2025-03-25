@@ -24,7 +24,7 @@
         <h3>References</h3>
         <p><%= @results['refs'].join(', ') %></p>
       <% end %>
-      <p><a href="/term/<%= URI.encode_www_form_component(@results['headword']) %>">View full details</a></p>
+      <p><a href="/jastrow/term/<%= URI.encode_www_form_component(@results['headword']) %>">View full details</a></p>
     </div>
   <% elsif @results.is_a?(Array) %>
     <% if @results.empty? %>
@@ -50,7 +50,7 @@
             <h3>RID</h3>
             <p><%= result['rid'] %></p>
           <% end %>
-          <p><a href="/term/<%= URI.encode_www_form_component(result['headword']) %>">View details</a></p>
+          <p><a href="/jastrow/term/<%= URI.encode_www_form_component(result['headword']) %>">View details</a></p>
         </div>
       <% end %>
     <% end %>

@@ -1,0 +1,74 @@
+=== puma startup: 2025-03-24 01:38:28 +0000 ===
+=== puma startup: 2025-03-24 01:43:01 +0000 ===
+=== puma startup: 2025-03-24 01:47:39 +0000 ===
+=== puma startup: 2025-03-24 01:48:34 +0000 ===
+=== puma startup: 2025-03-24 01:53:27 +0000 ===
+=== puma startup: 2025-03-24 01:54:10 +0000 ===
+Session cookie encryptor error: HMAC is invalid
+=== puma startup: 2025-03-24 02:09:38 +0000 ===
+=== puma startup: 2025-03-24 02:11:22 +0000 ===
+=== puma startup: 2025-03-24 11:02:39 +0000 ===
+=== puma startup: 2025-03-24 11:10:59 +0000 ===
+=== puma startup: 2025-03-24 11:11:33 +0000 ===
+== Sinatra has ended his set (crowd applauds)
+== Sinatra has ended his set (crowd applauds)
+== Sinatra has ended his set (crowd applauds)
+== Sinatra (v4.1.1) has taken the stage on 4567 for development with backup from Puma
+== Someone is already performing on port 4567!
+== Sinatra has ended his set (crowd applauds)
+/home/ubuntu/.local/share/gem/ruby/3.2.0/gems/puma-6.6.0/lib/puma/binder.rb:342:in `initialize': Address already in use - bind(2) for "127.0.0.1" port 4567 (Errno::EADDRINUSE)
+	from /home/ubuntu/.local/share/gem/ruby/3.2.0/gems/puma-6.6.0/lib/puma/binder.rb:342:in `new'
+	from /home/ubuntu/.local/share/gem/ruby/3.2.0/gems/puma-6.6.0/lib/puma/binder.rb:342:in `add_tcp_listener'
+	from /home/ubuntu/.local/share/gem/ruby/3.2.0/gems/puma-6.6.0/lib/puma/binder.rb:336:in `block in add_tcp_listener'
+	from /home/ubuntu/.local/share/gem/ruby/3.2.0/gems/puma-6.6.0/lib/puma/binder.rb:335:in `each'
+	from /home/ubuntu/.local/share/gem/ruby/3.2.0/gems/puma-6.6.0/lib/puma/binder.rb:335:in `add_tcp_listener'
+	from /home/ubuntu/.local/share/gem/ruby/3.2.0/gems/puma-6.6.0/lib/puma/binder.rb:171:in `block in parse'
+	from /home/ubuntu/.local/share/gem/ruby/3.2.0/gems/puma-6.6.0/lib/puma/binder.rb:154:in `each'
+	from /home/ubuntu/.local/share/gem/ruby/3.2.0/gems/puma-6.6.0/lib/puma/binder.rb:154:in `parse'
+	from /home/ubuntu/.local/share/gem/ruby/3.2.0/gems/puma-6.6.0/lib/puma/cluster.rb:396:in `run'
+	from /home/ubuntu/.local/share/gem/ruby/3.2.0/gems/puma-6.6.0/lib/puma/launcher.rb:203:in `run'
+	from /home/ubuntu/.local/share/gem/ruby/3.2.0/gems/puma-6.6.0/lib/rack/handler/puma.rb:79:in `run'
+	from /var/lib/gems/3.2.0/gems/sinatra-4.1.1/lib/sinatra/base.rb:1694:in `start_server'
+	from /var/lib/gems/3.2.0/gems/sinatra-4.1.1/lib/sinatra/base.rb:1633:in `run!'
+	from /var/lib/gems/3.2.0/gems/sinatra-contrib-4.1.1/lib/sinatra/reloader.rb:276:in `run!'
+	from /var/lib/gems/3.2.0/gems/sinatra-4.1.1/lib/sinatra/main.rb:47:in `block in <module:Sinatra>'
+=== puma startup: 2025-03-24 12:47:53 +0000 ===
+== Sinatra has ended his set (crowd applauds)
+== Sinatra has ended his set (crowd applauds)
+== Sinatra has ended his set (crowd applauds)
+== Sinatra (v4.1.1) has taken the stage on 4567 for development with backup from Puma
+== Someone is already performing on port 4567!
+== Sinatra has ended his set (crowd applauds)
+/home/ubuntu/.local/share/gem/ruby/3.2.0/gems/puma-6.6.0/lib/puma/binder.rb:342:in `initialize': Address already in use - bind(2) for "127.0.0.1" port 4567 (Errno::EADDRINUSE)
+	from /home/ubuntu/.local/share/gem/ruby/3.2.0/gems/puma-6.6.0/lib/puma/binder.rb:342:in `new'
+	from /home/ubuntu/.local/share/gem/ruby/3.2.0/gems/puma-6.6.0/lib/puma/binder.rb:342:in `add_tcp_listener'
+	from /home/ubuntu/.local/share/gem/ruby/3.2.0/gems/puma-6.6.0/lib/puma/binder.rb:336:in `block in add_tcp_listener'
+	from /home/ubuntu/.local/share/gem/ruby/3.2.0/gems/puma-6.6.0/lib/puma/binder.rb:335:in `each'
+	from /home/ubuntu/.local/share/gem/ruby/3.2.0/gems/puma-6.6.0/lib/puma/binder.rb:335:in `add_tcp_listener'
+	from /home/ubuntu/.local/share/gem/ruby/3.2.0/gems/puma-6.6.0/lib/puma/binder.rb:171:in `block in parse'
+	from /home/ubuntu/.local/share/gem/ruby/3.2.0/gems/puma-6.6.0/lib/puma/binder.rb:154:in `each'
+	from /home/ubuntu/.local/share/gem/ruby/3.2.0/gems/puma-6.6.0/lib/puma/binder.rb:154:in `parse'
+	from /home/ubuntu/.local/share/gem/ruby/3.2.0/gems/puma-6.6.0/lib/puma/cluster.rb:396:in `run'
+	from /home/ubuntu/.local/share/gem/ruby/3.2.0/gems/puma-6.6.0/lib/puma/launcher.rb:203:in `run'
+	from /home/ubuntu/.local/share/gem/ruby/3.2.0/gems/puma-6.6.0/lib/rack/handler/puma.rb:79:in `run'
+	from /var/lib/gems/3.2.0/gems/sinatra-4.1.1/lib/sinatra/base.rb:1694:in `start_server'
+	from /var/lib/gems/3.2.0/gems/sinatra-4.1.1/lib/sinatra/base.rb:1633:in `run!'
+	from /var/lib/gems/3.2.0/gems/sinatra-contrib-4.1.1/lib/sinatra/reloader.rb:276:in `run!'
+	from /var/lib/gems/3.2.0/gems/sinatra-4.1.1/lib/sinatra/main.rb:47:in `block in <module:Sinatra>'
+=== puma startup: 2025-03-24 13:00:11 +0000 ===
+/home/ubuntu/.local/share/gem/ruby/3.2.0/gems/puma-6.6.0/lib/puma/launcher.rb:143:in `unlink': Permission denied @ apply2files - /var/www/jastrow/tmp/puma.pid (Errno::EACCES)
+	from /home/ubuntu/.local/share/gem/ruby/3.2.0/gems/puma-6.6.0/lib/puma/launcher.rb:143:in `delete_pidfile'
+	from /home/ubuntu/.local/share/gem/ruby/3.2.0/gems/puma-6.6.0/lib/puma/launcher.rb:325:in `block in write_pid'
+/home/ubuntu/.local/share/gem/ruby/3.2.0/gems/puma-6.6.0/lib/puma/cluster.rb:346:in `block in setup_signals': SIGTERM (SignalException)
+	from /home/ubuntu/.local/share/gem/ruby/3.2.0/gems/puma-6.6.0/lib/puma/cluster.rb:459:in `wait_readable'
+	from /home/ubuntu/.local/share/gem/ruby/3.2.0/gems/puma-6.6.0/lib/puma/cluster.rb:459:in `run'
+	from /home/ubuntu/.local/share/gem/ruby/3.2.0/gems/puma-6.6.0/lib/puma/launcher.rb:203:in `run'
+	from /home/ubuntu/.local/share/gem/ruby/3.2.0/gems/puma-6.6.0/lib/puma/cli.rb:75:in `run'
+	from /home/ubuntu/.local/share/gem/ruby/3.2.0/gems/puma-6.6.0/bin/puma:10:in `<top (required)>'
+	from /usr/local/bin/puma:25:in `load'
+	from /usr/local/bin/puma:25:in `<main>'
+=== puma startup: 2025-03-24 14:43:27 +0000 ===
+=== puma startup: 2025-03-24 14:51:56 +0000 ===
+=== puma startup: 2025-03-24 14:58:30 +0000 ===
+=== puma startup: 2025-03-24 15:21:27 +0000 ===
+=== puma startup: 2025-03-24 17:54:26 +0000 ===

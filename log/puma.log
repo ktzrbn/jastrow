@@ -1,0 +1,151 @@
+=== puma startup: 2025-03-24 01:38:28 +0000 ===
+[993261] - Worker 1 (PID: 993264) booted in 0.36s, phase: 0
+[993261] - Worker 0 (PID: 993262) booted in 0.36s, phase: 0
+=== puma startup: 2025-03-24 01:43:01 +0000 ===
+[993452] - Worker 0 (PID: 993453) booted in 0.37s, phase: 0
+[993452] - Worker 1 (PID: 993455) booted in 0.37s, phase: 0
+[993261] - Gracefully shutting down workers...
+[993261] === puma shutdown: 2025-03-24 01:43:20 +0000 ===
+[993261] - Goodbye!
+=== puma startup: 2025-03-24 01:47:39 +0000 ===
+[993501] + Gemfile in context: /var/www/jastrow/Gemfile
+[993503] + Gemfile in context: /var/www/jastrow/Gemfile
+[993499] - Worker 0 (PID: 993501) booted in 0.57s, phase: 0
+[993499] - Worker 1 (PID: 993503) booted in 0.57s, phase: 0
+[993499] === puma shutdown: 2025-03-24 01:48:34 +0000 ===
+[993499] - Goodbye!
+[993499] - Gracefully shutting down workers...
+=== puma startup: 2025-03-24 01:48:34 +0000 ===
+[993575] + Gemfile in context: /var/www/jastrow/Gemfile
+[993577] + Gemfile in context: /var/www/jastrow/Gemfile
+[993571] - Worker 1 (PID: 993577) booted in 0.57s, phase: 0
+[993571] - Worker 0 (PID: 993575) booted in 0.57s, phase: 0
+[993455] ! Detected parent died, dying
+[993453] ! Detected parent died, dying
+[993577] ! Detected parent died, dying
+[993575] ! Detected parent died, dying
+=== puma startup: 2025-03-24 01:53:27 +0000 ===
+[993716] + Gemfile in context: /var/www/jastrow/Gemfile
+[993718] + Gemfile in context: /var/www/jastrow/Gemfile
+[993712] - Worker 0 (PID: 993716) booted in 0.55s, phase: 0
+[993712] - Worker 1 (PID: 993718) booted in 0.55s, phase: 0
+[993712] === puma shutdown: 2025-03-24 01:54:09 +0000 ===
+[993712] - Goodbye!
+[993712] - Gracefully shutting down workers...
+=== puma startup: 2025-03-24 01:54:10 +0000 ===
+[993817] + Gemfile in context: /var/www/jastrow/Gemfile
+[993819] + Gemfile in context: /var/www/jastrow/Gemfile
+[993815] - Worker 0 (PID: 993817) booted in 0.51s, phase: 0
+[993815] - Worker 1 (PID: 993819) booted in 0.51s, phase: 0
+[993815] === puma shutdown: 2025-03-24 02:09:38 +0000 ===
+[993815] - Goodbye!
+[993815] - Gracefully shutting down workers...
+=== puma startup: 2025-03-24 02:09:38 +0000 ===
+[994229] + Gemfile in context: /var/www/jastrow/Gemfile
+[994231] + Gemfile in context: /var/www/jastrow/Gemfile
+[994225] - Worker 0 (PID: 994229) booted in 0.53s, phase: 0
+[994225] - Worker 1 (PID: 994231) booted in 0.53s, phase: 0
+[994225] === puma shutdown: 2025-03-24 02:11:08 +0000 ===
+[994225] - Goodbye!
+[994225] - Gracefully shutting down workers...
+=== puma startup: 2025-03-24 02:11:22 +0000 ===
+[994560] + Gemfile in context: /var/www/jastrow/Gemfile
+[994562] + Gemfile in context: /var/www/jastrow/Gemfile
+[994558] - Worker 1 (PID: 994562) booted in 0.59s, phase: 0
+[994558] - Worker 0 (PID: 994560) booted in 0.59s, phase: 0
+=== puma startup: 2025-03-24 11:02:39 +0000 ===
+[997408] - Worker 0 (PID: 997409) booted in 0.0s, phase: 0
+[997408] - Worker 1 (PID: 997411) booted in 0.0s, phase: 0
+[997408] - Gracefully shutting down workers...
+[997408] === puma shutdown: 2025-03-24 11:04:33 +0000 ===
+[997408] - Goodbye!
+=== puma startup: 2025-03-24 11:10:59 +0000 ===
+[997505] + Gemfile in context: /var/www/jastrow/Gemfile
+[997504] - Worker 0 (PID: 997505) booted in 0.0s, phase: 0
+[997508] + Gemfile in context: /var/www/jastrow/Gemfile
+[997504] - Worker 1 (PID: 997508) booted in 0.0s, phase: 0
+[997504] - Gracefully shutting down workers...
+[997504] === puma shutdown: 2025-03-24 11:11:17 +0000 ===
+[997504] - Goodbye!
+=== puma startup: 2025-03-24 11:11:33 +0000 ===
+[997523] + Gemfile in context: /var/www/jastrow/Gemfile
+[997522] - Worker 0 (PID: 997523) booted in 0.0s, phase: 0
+[997525] + Gemfile in context: /var/www/jastrow/Gemfile
+[997522] - Worker 1 (PID: 997525) booted in 0.0s, phase: 0
+[997522] - Gracefully shutting down workers...
+[997522] === puma shutdown: 2025-03-24 11:12:44 +0000 ===
+[997522] - Goodbye!
+[997522] Puma starting in cluster mode...
+[997522] * Puma version: 6.6.0 ("Return to Forever")
+[997522] * Ruby version: ruby 3.2.3 (2024-01-18 revision 52bb2ac0a6) [x86_64-linux-gnu]
+[997522] *  Min threads: 1
+[997522] *  Max threads: 4
+[997522] *  Environment: production
+[997522] *   Master PID: 997522
+[997522] *      Workers: 2
+[997522] *     Restarts: (✔) hot (✔) phased
+=== puma startup: 2025-03-24 12:47:53 +0000 ===
+[997834] + Gemfile in context: /var/www/jastrow/Gemfile
+[997833] - Worker 0 (PID: 997834) booted in 0.0s, phase: 0
+[997837] + Gemfile in context: /var/www/jastrow/Gemfile
+[997833] - Worker 1 (PID: 997837) booted in 0.0s, phase: 0
+[997833] - Gracefully shutting down workers...
+[997833] === puma shutdown: 2025-03-24 12:47:59 +0000 ===
+[997833] - Goodbye!
+[997833] Puma starting in cluster mode...
+[997833] * Puma version: 6.6.0 ("Return to Forever")
+[997833] * Ruby version: ruby 3.2.3 (2024-01-18 revision 52bb2ac0a6) [x86_64-linux-gnu]
+[997833] *  Min threads: 1
+[997833] *  Max threads: 4
+[997833] *  Environment: production
+[997833] *   Master PID: 997833
+[997833] *      Workers: 2
+[997833] *     Restarts: (✔) hot (✔) phased
+[994562] ! Detected parent died, dying
+[994560] ! Detected parent died, dying
+=== puma startup: 2025-03-24 13:00:11 +0000 ===
+[997921] + Gemfile in context: /var/www/jastrow/Gemfile
+[997923] + Gemfile in context: /var/www/jastrow/Gemfile
+[997919] - Worker 1 (PID: 997923) booted in 0.62s, phase: 0
+[997919] - Worker 0 (PID: 997921) booted in 0.62s, phase: 0
+[997919] === puma shutdown: 2025-03-24 13:17:08 +0000 ===
+[997919] - Goodbye!
+[997919] - Gracefully shutting down workers...
+=== puma startup: 2025-03-24 14:43:27 +0000 ===
+[1002019] + Gemfile in context: /var/www/jastrow/Gemfile
+[1002022] + Gemfile in context: /var/www/jastrow/Gemfile
+[1002018] - Worker 0 (PID: 1002019) booted in 0.0s, phase: 0
+[1002018] - Worker 1 (PID: 1002022) booted in 0.0s, phase: 0
+[1002018] - Gracefully shutting down workers...
+[1002018] === puma shutdown: 2025-03-24 14:43:47 +0000 ===
+[1002018] - Goodbye!
+=== puma startup: 2025-03-24 14:51:56 +0000 ===
+[1002302] + Gemfile in context: /var/www/jastrow/Gemfile
+[1002301] - Worker 0 (PID: 1002302) booted in 0.0s, phase: 0
+[1002304] + Gemfile in context: /var/www/jastrow/Gemfile
+[1002301] - Worker 1 (PID: 1002304) booted in 0.0s, phase: 0
+[1002301] - Gracefully shutting down workers...
+[1002301] === puma shutdown: 2025-03-24 14:52:19 +0000 ===
+[1002301] - Goodbye!
+=== puma startup: 2025-03-24 14:58:30 +0000 ===
+[1002450] + Gemfile in context: /var/www/jastrow/Gemfile
+[1002449] - Worker 0 (PID: 1002450) booted in 0.0s, phase: 0
+[1002453] + Gemfile in context: /var/www/jastrow/Gemfile
+[1002449] - Worker 1 (PID: 1002453) booted in 0.0s, phase: 0
+[1002449] - Gracefully shutting down workers...
+[1002449] === puma shutdown: 2025-03-24 14:58:55 +0000 ===
+[1002449] - Goodbye!
+=== puma startup: 2025-03-24 15:21:27 +0000 ===
+[1002943] + Gemfile in context: /var/www/jastrow/Gemfile
+[1002942] - Worker 0 (PID: 1002943) booted in 0.0s, phase: 0
+[1002946] + Gemfile in context: /var/www/jastrow/Gemfile
+[1002942] - Worker 1 (PID: 1002946) booted in 0.0s, phase: 0
+[1002942] - Gracefully shutting down workers...
+[1002942] === puma shutdown: 2025-03-24 15:21:31 +0000 ===
+[1002942] - Goodbye!
+=== puma startup: 2025-03-24 17:54:26 +0000 ===
+[1008180] - Worker 0 (PID: 1008181) booted in 0.0s, phase: 0
+[1008180] - Worker 1 (PID: 1008183) booted in 0.0s, phase: 0
+[1008180] - Gracefully shutting down workers...
+[1008180] === puma shutdown: 2025-03-24 17:54:51 +0000 ===
+[1008180] - Goodbye!

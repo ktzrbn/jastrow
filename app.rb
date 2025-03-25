@@ -1,16 +1,20 @@
-require 'sinatra'
-require 'sinatra/reloader' if development?
+require 'sinatra/base'
 require 'net/http'
 require 'uri'
 require 'json'
 require 'dotenv/load'
 
-class SefariaDict < Sinatra::Base
+class Jastrow < Sinatra::Base
   # Configure the application
   configure do
     set :public_folder, 'public'
     set :views, 'views'
     enable :sessions
+  end
+
+  # Ensure the app knows it's running under /jastrow
+  before do
+    request.script_name = '/jastrow' if ENV['RACK_BASE_URI']
   end
 
   # Helper method to fix relative URLs
@@ -47,7 +51,7 @@ class SefariaDict < Sinatra::Base
   # Search endpoint
   get '/search' do
     query = params[:query]
-    redirect '/' if query.nil? || query.empty?
+    redirect '/jastrow' if query.nil? || query.empty?
     
     encoded_query = URI.encode_www_form_component(query)
     url = URI("#{SEFARIA_API_BASE}/#{encoded_query}")
@@ -127,7 +131,4 @@ class SefariaDict < Sinatra::Base
   not_found do
     erb :not_found
   end
-
-  # Start the application
-  run! if app_file == $0
 end
