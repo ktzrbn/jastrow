@@ -10,13 +10,13 @@
       <% if @term_data['content'] && @term_data['content']['senses'] %>
         <h3>Definitions</h3>
         <% @term_data['content']['senses'].each do |sense| %>
-          <p><%= sense['definition'] %></p>
+        <p><%= process_jastrow_links(sense['definition']) %></p>
         <% end %>
       <% end %>
       <% if @term_data['refs'] %>
         <h3>References</h3>
-        <p><%= @term_data['refs'].join(', ') %></p>
-      <% end %>
+          <p><%= @term_data['refs'].join(', ') %></p>
+        <% end %>
       <% if @term_data['rid'] %>
         <h3>RID</h3>
         <p><%= @term_data['rid'] %></p>
@@ -37,7 +37,7 @@
           <% if term['content'] && term['content']['senses'] %>
             <h3>Definitions</h3>
             <% term['content']['senses'].each do |sense| %>
-              <p><%= sense['definition'] %></p>
+              <p><%= process_jastrow_links(sense['definition']) %></p>
             <% end %>
           <% end %>
           <% if term['refs'] %>
