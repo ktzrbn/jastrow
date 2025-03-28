@@ -5,7 +5,7 @@
   <% if @term_data.is_a?(Hash) %>
     <div class="result">
       <h2><%= @term_data['headword'] %></h2>
-      <h3>Parent Lexicon</h3>
+      <h3>Originating Dictionary</h3>
       <p><%= @term_data['parent_lexicon'] %></p>
       <% if @term_data['content'] && @term_data['content']['senses'] %>
         <h3>Definitions</h3>
@@ -18,20 +18,20 @@
         <p><%= @term_data['refs'].join(', ') %></p>
       <% end %>
       <% if @term_data['rid'] %>
-        <h3>RID</h3>
+       <!--  <h3>RID</h3>
         <p><%= @term_data['rid'] %></p>
       <% end %>
-    </div>
+    </div>-->
   <% elsif @term_data.is_a?(Array) %>
     <% if @term_data.empty? %>
       <p>No detailed data available for this term.</p>
     <% else %>
-      <p>Possible matches:</p>
+      <p><b>Possible matches:</b></p>
       <% @term_data.each do |term| %>
         <div class="result">
           <h2><%= term['headword'] || term.to_s %></h2>
           <% if term['parent_lexicon'] %>
-            <h3>Parent Lexicon</h3>
+            <h3>Originating Dictionary</h3>
             <p><%= term['parent_lexicon'] %></p>
           <% end %>
           <% if term['content'] && term['content']['senses'] %>

@@ -12,7 +12,7 @@
   <% if @results.is_a?(Hash) %>
     <div class="result">
       <h2><%= @results['headword'] %></h2>
-      <h3>Parent Lexicon</h3>
+      <h3>Originating Dictionary</h3>
       <p><%= @results['parent_lexicon'] %></p>
       <% if @results['content'] && @results['content']['senses'] %>
         <h3>Definitions</h3>
@@ -30,11 +30,11 @@
     <% if @results.empty? %>
       <p>No results found for "<%= @original_query %>".</p>
     <% else %>
-      <p>Found <%= @results.size %> results from Jastrow Dictionary:</p>
+      <p><b>Found <%= @results.size %> results from Jastrow:</b></p>
       <% @results.each do |result| %>
         <div class="result">
           <h2><%= result['headword'] %></h2>
-          <h3>Parent Lexicon</h3>
+          <h3>Originating Dictionary</h3>
           <p><%= result['parent_lexicon'] %></p>
           <% if result['content'] && result['content']['senses'] %>
             <h3>Definitions</h3>
@@ -47,10 +47,10 @@
             <p><%= result['refs'].join(', ') %></p>
           <% end %>
           <% if result['rid'] %>
-            <h3>RID</h3>
+            <!-- <h3>RID</h3>
             <p><%= result['rid'] %></p>
-          <% end %>
-          <p><a href="/jastrow/term/<%= URI.encode_www_form_component(result['headword']) %>">View details</a></p>
+          <% end %>-->
+          <!-- <p><a href="/jastrow/term/<%= URI.encode_www_form_component(result['headword']) %>">View details</a></p>-->
         </div>
       <% end %>
     <% end %>
